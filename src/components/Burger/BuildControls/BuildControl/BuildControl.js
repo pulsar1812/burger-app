@@ -15,6 +15,11 @@ const BuildControl = ({ label, added, removed, disabled }) => (
   </div>
 );
 
-BuildControl.propTypes = {};
+BuildControl.propTypes = {
+  label: PropTypes.string.isRequired,
+  added: PropTypes.func.isRequired,
+  removed: PropTypes.func.isRequired,
+  disabled: PropTypes.bool.isRequired
+};
 
 export default BuildControl;
